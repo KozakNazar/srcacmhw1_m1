@@ -143,10 +143,10 @@ PROGRAM program = {
 /*z*/{q0, q0, q3, q0, q0, qf}
 };
 
-typedef struct structDFA{
+typedef struct StructDFA{
 	unsigned char * data;
 	PROGRAM * program;
-	void(*run)(struct structDFA * dfa);
+	void(*run)(struct StructDFA * dfa);
 	Q state;
 } DFA;
 
